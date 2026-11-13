@@ -24,6 +24,7 @@ from fastapi.responses import JSONResponse
 from sqlalchemy import text
 from sqlalchemy.exc import IntegrityError
 
+
 from app.api.v1 import api_router
 from app.core.config import settings
 from app.db.session import SessionLocal

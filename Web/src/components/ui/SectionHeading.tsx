@@ -1,3 +1,14 @@
+/**
+ * The title above a block of content, with an optional link on its right.
+ *
+ * This module belongs to the UI primitives layer (src/components/ui).
+ *
+ * Every section on every screen uses this, which is what keeps "Active
+ * projects" and "Recent tasks" the same size, weight and gap without anyone
+ * having to remember it. The action is a button rather than a link because it
+ * changes what is on screen, not where the browser is.
+ */
+
 import { ArrowRight } from "lucide-react";
 
 type SectionHeadingProps = {

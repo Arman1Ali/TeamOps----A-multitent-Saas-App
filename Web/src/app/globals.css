@@ -1,3 +1,18 @@
+/*
+ * The one stylesheet, loaded from src/app/layout.tsx.
+ *
+ * Everything from `@import url(...)` down is the file the Vite version of this
+ * app shipped with, moved unchanged: the design is not being redesigned, only
+ * the build.
+ *
+ * Tailwind v4 has no tailwind.config.js. The `@theme` block IS the
+ * configuration - a token named `--color-brand` becomes the utilities
+ * `bg-brand`, `text-brand` and `border-brand`, and `--shadow-card` becomes
+ * `shadow-card`. That is why the components can say `bg-teamops-canvas` and
+ * still be readable: the colour lives here, once.
+ */
+
+/* The two typefaces. Loaded over the network, exactly as before. */
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap");
 @import "tailwindcss";
 
@@ -39,6 +54,7 @@
   }
 }
 
+/* Respect the OS setting. Nothing in this app is worth a motion sickness. */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
